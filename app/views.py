@@ -76,3 +76,16 @@ def lista_vestibulares(request):
         })
     )
 
+def lista_candidatos(request):
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/lista_candidatos.html',
+        context_instance = RequestContext(request,
+        {
+            'nome':'Cadastro de Candidatos',
+            'candidatos': Candidato.objects.all(),
+         
+        })
+    )
+
