@@ -94,7 +94,7 @@ def lista_locais(request):
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/lista_local.html',
+        'app/lista_locais.html',
         context_instance = RequestContext(request,
         {
             'title':'Lista de Local da prova',
