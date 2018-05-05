@@ -19,4 +19,10 @@ class Candidato(models.Model):
     cpf = models.CharField(max_length=200)
     endereco = models.CharField(max_length=520)
     telefone = models.CharField(max_length=200)
-
+    
+class Local(models.Model):
+    escola = models.CharField(max_length=200)
+    endereco = models.CharField(max_length=200)
+    cidade = models.CharField(max_length=200)
+    estado = models.CharField(max_length=200)
+    
